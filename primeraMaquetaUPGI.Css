@@ -1,0 +1,225 @@
+/* Tipografía base */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2563EB; /* Fondo institucional */
+  color: white;
+}
+
+/* Variables de color */
+:root {
+  --azul-upgi: #2563EB;
+  --verde-upgi: #10B981;
+}
+
+/* Header */
+.site-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo-img {
+  height: 50px;
+}
+
+/* Navegación */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-weight: 600;
+  color: var(--azul-upgi);
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-btn:hover {
+  color: var(--verde-upgi);
+}
+
+.nav-btn.accent {
+  color: var(--verde-upgi);
+}
+
+/* Hero con banner */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero-overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-overlay .accent {
+  color: var(--verde-upgi);
+}
+
+.hero-overlay .blue {
+  color: var(--azul-upgi);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Botones */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--azul-upgi);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1e4ed8;
+}
+
+.btn-secondary {
+  background-color: var(--verde-upgi);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #0e9e6f;
+}
+
+/* Tarjetas de características */
+.features-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.feature-card {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 30%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #f0f0f0;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+.footer-links a {
+  color: var(--azul-upgi);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--verde-upgi);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .features-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+}
