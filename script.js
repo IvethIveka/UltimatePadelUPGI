@@ -1,46 +1,45 @@
 // Esperar a que el DOM esté completamente cargado
 document.addEventListener("DOMContentLoaded", () => {
-  // Navegación entre secciones
-  const navLinks = document.querySelectorAll(".nav-btn");
-  const sections = document.querySelectorAll("section");
+  // Navegación entre secciones con scroll suave
+  const enlacesMenu = document.querySelectorAll(".boton-menu");
 
-  navLinks.forEach(link => {
-    link.addEventListener("click", e => {
-      e.preventDefault();
-      const targetId = link.getAttribute("href").replace("#", "");
+  enlacesMenu.forEach(enlace => {
+    enlace.addEventListener("click", evento => {
+      evento.preventDefault();
+      const destinoId = enlace.getAttribute("href").replace("#", "");
+      const destino = document.getElementById(destinoId);
 
-      sections.forEach(section => {
-        section.classList.remove("visible");
-        if (section.id === targetId) {
-          section.classList.add("visible");
-          window.scrollTo({ top: section.offsetTop, behavior: "smooth" });
-        }
-      });
+      if (destino) {
+        destino.scrollIntoView({ behavior: "smooth" });
+      }
     });
   });
 
-  // Botones del Hero
-  const reservarBtn = document.querySelector(".btn-primary");
-  const loginBtn = document.querySelector(".btn-secondary");
+  // Botones del banner principal
+  const botonReservar = document.querySelector(".boton-primario");
+  const botonLogin = document.querySelector(".boton-secundario");
 
-  if (reservarBtn) {
-    reservarBtn.addEventListener("click", () => {
-      document.getElementById("reservas").scrollIntoView({ behavior: "smooth" });
+  if (botonReservar) {
+    botonReservar.addEventListener("click", () => {
+      const seccionReservas = document.getElementById("reservas");
+      if (seccionReservas) {
+        seccionReservas.scrollIntoView({ behavior: "smooth" });
+      }
     });
   }
 
-  if (loginBtn) {
-    loginBtn.addEventListener("click", () => {
-      document.getElementById("login").scrollIntoView({ behavior: "smooth" });
+  if (botonLogin) {
+    botonLogin.addEventListener("click", () => {
+      const seccionLogin = document.getElementById("login");
+      if (seccionLogin) {
+        seccionLogin.scrollIntoView({ behavior: "smooth" });
+      }
     });
   }
 
   // Footer dinámico: año actual
-  const yearSpan = document.getElementById("year");
-  if (yearSpan) {
-    yearSpan.textContent = new Date().getFullYear();
+  const spanAño = document.getElementById("year");
+  if (spanAño) {
+    spanAño.textContent = new Date().getFullYear();
   }
 });
-
-
-

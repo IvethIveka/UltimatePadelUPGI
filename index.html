@@ -5,69 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Sistema integral para reservas, pagos y gestión de canchas de pádel." />
   <meta name="author" content="Iveth Iveka" />
-  <title>UPGI - Ultimate Padel Gestión Integral</title>
+  <title>UPGI - Ultimate Pádel Gestión Integral</title>
 
   <!-- Tipografía Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <!-- Hoja de estilos -->
-
- <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="estilosUPGI.css" />
 </head>
 
 <body>
-  <!--  Header fijo con logo y navegación -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <img src="imagenes/bannerUPGI.png" alt="Logo UPGI" class="logo-img" />
+  <!-- Encabezado con logo y navegación -->
+  <header class="encabezado">
+    <div class="contenedor encabezado-contenido">
+      <div class="logo">
+        <img src="imagenes/bannerUPGI.png" alt="Logo UPGI" class="logo-imagen" />
       </div>
-      <nav class="main-nav" aria-label="Navegación principal">
+      <nav class="menu-principal" aria-label="Navegación principal">
         <ul>
-          <li><a href="#inicio" class="nav-btn">Inicio</a></li>
-          <li><a href="#reservas" class="nav-btn">Reservas</a></li>
-          <li><a href="#contacto" class="nav-btn">Contacto</a></li>
-          <li><a href="#login" class="nav-btn accent">Iniciar sesión</a></li>
+          <li><a href="#inicio" class="boton-menu">Inicio</a></li>
+          <li><a href="#reservas" class="boton-menu">Reservas</a></li>
+          <li><a href="#contacto" class="boton-menu">Contacto</a></li>
+          <li><a href="#login" class="boton-menu destacado">Iniciar sesión</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!--  Hero con banner único -->
-  <section id="inicio" class="hero-section">
-    <div class="hero-banner">
-      <img src="imagenes/bannerUPGI.jpg" alt="Banner UPGI" class="banner-img" />
-      <div class="hero-overlay">
-        <h1>Bienvenido a <span class="accent">UPGI</span><br><span class="blue">Ultimate Pádel</span></h1>
+  <!-- Sección principal con banner -->
+  <section id="inicio" class="seccion-banner">
+    <div class="banner-imagen-fondo">
+      <div class="capa-superpuesta">
+        <h1>Bienvenido a <span class="destacado">UPGI</span><br><span class="azul">Ultimate Pádel</span></h1>
         <p>Sistema integral de reservas y gestión de canchas de pádel.</p>
-        <div class="hero-buttons">
-          <a href="#reservas" class="btn btn-primary">Reservar Ahora</a>
-          <a href="#login" class="btn btn-secondary">Iniciar Sesión</a>
+        <div class="botones-accion">
+          <a href="#reservas" class="boton boton-primario">Reservar Ahora</a>
+          <a href="#login" class="boton boton-secundario">Iniciar Sesión</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 🔹 Sección intermedia con tarjetas -->
-  <section class="features-section">
-    <div class="feature-card">
+  <!-- Sección de características -->
+  <section class="seccion-caracteristicas">
+    <div class="tarjeta-caracteristica">
       <h3>Reservas Inteligentes</h3>
       <p>Gestión en tiempo real con confirmación instantánea.</p>
     </div>
-    <div class="feature-card">
+    <div class="tarjeta-caracteristica">
       <h3>Reportes Avanzados</h3>
       <p>Estadísticas detalladas para optimizar tu centro deportivo.</p>
     </div>
-    <div class="feature-card">
+    <div class="tarjeta-caracteristica">
       <h3>Gestión de Usuarios</h3>
       <p>Administra jugadores, torneos y membresías.</p>
     </div>
   </section>
 
-  <!-- 🔹 Footer institucional -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 UPGI - Ultimate Padel Gestión Integral</p>
-      <ul class="footer-links">
+  <!-- Pie de página -->
+  <footer class="pie-pagina">
+    <div class="contenedor">
+      <p>&copy; 2025 UPGI - Ultimate Pádel Gestión Integral</p>
+      <ul class="enlaces-pie">
         <li><a href="#">Términos de Servicio</a></li>
         <li><a href="#">Política de Privacidad</a></li>
         <li><a href="#">Soporte</a></li>
@@ -77,7 +75,7 @@
   </footer>
 
   <!-- Script JS -->
-  <script src="script.js"></script>
+  <script src="funcionesUPGI.js"></script>
 </body>
 </html>
 
