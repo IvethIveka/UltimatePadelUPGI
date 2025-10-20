@@ -2,16 +2,16 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #121212; /* Fondo oscuro institucional */
+  color: #f4f4f4;
 }
 
 /* Encabezado */
 .encabezado {
   position: fixed;
   width: 100%;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
   z-index: 1000;
 }
 
@@ -36,7 +36,7 @@ body {
 
 .boton-menu {
   text-decoration: none;
-  color: #333;
+  color: #f4f4f4;
   font-weight: 500;
 }
 
@@ -45,33 +45,32 @@ body {
 }
 
 .azul {
-  color: #1976d2;
+  color: #42a5f5;
 }
 
-/* Sección principal */
+/* Banner principal */
 .seccion-banner {
-  padding-top: 100px;
-  text-align: center;
-  background-color: #fff;
-}
-
-.contenedor-imagenes-hero {
+  .seccion-banner {
+  height: 100vh;
+  background-image: url('imagenes/bannerUPGI.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.imagen-hero {
-  width: 30%;
-  max-width: 300px;
-  height: auto;
+}
+
+.capa-superpuesta {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
   border-radius: 10px;
-  object-fit: cover;
-}
-
-.texto-hero {
-  padding: 2rem;
+  max-width: 700px;
 }
 
 .botones-accion {
@@ -101,19 +100,20 @@ body {
 /* Sección de características */
 .seccion-caracteristicas {
   padding: 4rem 2rem;
-  background-color: #fff;
+  background-color: #1e1e1e;
   text-align: center;
 }
 
 .titulo-caracteristicas {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  color: #fff;
 }
 
 .subtitulo-caracteristicas {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  color: #666;
+  color: #ccc;
 }
 
 .contenedor-caracteristicas {
@@ -125,15 +125,16 @@ body {
 
 .tarjeta-caracteristica {
   max-width: 300px;
-  background-color: #f9f9f9;
+  background-color: #2c2c2c;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  color: #f4f4f4;
 }
 
 /* Pie de página */
 .pie-pagina {
-  background-color: #333;
+  background-color: #000;
   color: #fff;
   padding: 2rem;
   text-align: center;
