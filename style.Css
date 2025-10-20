@@ -48,29 +48,30 @@ body {
   color: #1976d2;
 }
 
-/* Banner principal */
+/* Sección principal */
 .seccion-banner {
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-}
-
-.banner-imagen-fondo {
-  background-image: url('imagenes/bannerUPGI.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.capa-superpuesta {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  padding-top: 100px;
   text-align: center;
+  background-color: #fff;
+}
+
+.contenedor-imagenes-hero {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
   padding: 2rem;
-  width: 100%;
+}
+
+.imagen-hero {
+  width: 30%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.texto-hero {
+  padding: 2rem;
 }
 
 .botones-accion {
@@ -84,6 +85,7 @@ body {
   font-weight: 600;
   border-radius: 5px;
   margin: 0 0.5rem;
+  display: inline-block;
 }
 
 .boton-primario {
@@ -98,15 +100,35 @@ body {
 
 /* Sección de características */
 .seccion-caracteristicas {
-  display: flex;
-  justify-content: space-around;
   padding: 4rem 2rem;
   background-color: #fff;
+  text-align: center;
+}
+
+.titulo-caracteristicas {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo-caracteristicas {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.contenedor-caracteristicas {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .tarjeta-caracteristica {
   max-width: 300px;
-  text-align: center;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 /* Pie de página */
