@@ -2,8 +2,7 @@
 
 **Estado del proyecto:** 🚧 En desarrollo  
 
-**Autor:** Iveth Iveka  Iveth Rivera / Jhon Stiven Posso
-
+**Autor:** Iveth Rivera / Jhon Stiven Posso
 
 **Ficha:** 3070325
 
