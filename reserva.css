@@ -1,0 +1,50 @@
+.seccion-reserva {
+  padding: 3rem 2rem;
+  background-color: #0f172a;
+  color: #f4f4f4;
+}
+
+.titulo-reserva {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input, select {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #1e293b;
+  color: #fff;
+}
+
+.boton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.boton-primario {
+  background-color: #00c853;
+  color: #fff;
+}
+
+.boton-secundario {
+  background-color: #374151;
+  color: #ccc;
+}
+
+.detalles-reserva {
+  margin-top: 2rem;
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 8px;
+}

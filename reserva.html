@@ -1,0 +1,41 @@
+<section class="seccion-reserva">
+  <h2 class="titulo-reserva">Reservar tu cancha de Pádel</h2>
+  <link rel="stylesheet" href="reserva.css">
+
+  <form id="form-reserva">
+    <label for="sede">Sede:</label>
+    <select id="sede" name="sede">
+      <option value="">Selecciona una sede</option>
+      <option value="norte">Norte</option>
+      <option value="sur">Sur</option>
+    </select>
+
+    <label for="cancha">Cancha:</label>
+    <select id="cancha" name="cancha">
+      <option value="">Selecciona una cancha</option>
+    </select>
+
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fecha" name="fecha" />
+
+    <label for="hora">Hora:</label>
+    <input type="time" id="hora" name="hora" />
+
+    <label for="jugadores">Jugadores:</label>
+    <input type="number" id="jugadores" name="jugadores" min="2" max="4" />
+
+    <button type="submit" class="boton boton-primario">Confirmar Reserva</button>
+    <button type="reset" class="boton boton-secundario">Cancelar</button>
+  </form>
+
+  <div class="detalles-reserva">
+    <h3>Detalles de la reserva</h3>
+    <ul id="resumen-reserva">
+      <li>Sede: No seleccionada</li>
+      <li>Cancha: No seleccionada</li>
+      <li>Fecha: No definida</li>
+      <li>Hora: No definida</li>
+      <li>Jugadores: No definidos</li>
+    </ul>
+  </div>
+</section>
